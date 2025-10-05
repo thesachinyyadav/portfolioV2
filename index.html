@@ -1282,6 +1282,14 @@
             .footer-downloads {
                 align-items: center;
             }
+
+            .featured-content {
+                grid-template-columns: 1fr !important;
+            }
+
+            .featured-project {
+                padding: 2rem 0 !important;
+            }
         }
 
         @media (max-width: 480px) {
@@ -1307,6 +1315,33 @@
             .stats-container {
                 grid-template-columns: 1fr;
             }
+
+            .featured-text h2 {
+                font-size: 1.8rem !important;
+            }
+
+            .featured-text h3 {
+                font-size: 1.2rem !important;
+            }
+        }
+
+        /* Additional Custom Styles for Enhanced UI */
+        .featured-project .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        #research {
+            background: var(--bg-secondary);
+            padding: 5rem 0;
+        }
+
+        .research-showcase a.btn {
+            transition: all 0.3s ease;
+        }
+
+        .research-showcase a.btn:hover {
+            transform: translateY(-2px);
         }
     </style>
 </head>
@@ -1339,6 +1374,7 @@
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -1367,11 +1403,16 @@
                 <p class="description">
                     Aspiring Computer Applications professional and second-year BCA student at Christ University, Bangalore. 
                     Experienced in full stack web development, mobile app development, and Python. 
-                    Passionate about AI/ML and innovation with a strong background in leadership and community service.
+                    Passionate about <strong>AI/ML and Legal Technology innovation</strong>, with published research on AI-powered judicial systems. 
+                    Creator of <strong>Nyaya Mitra</strong>, an AI legal assistance chatbot. Strong background in leadership and community service.
                 </p>                <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">
                         <i class="fas fa-code"></i>
                         View My Projects
+                    </a>
+                    <a href="https://studio.pickaxe.co/STUDIO2OYY1JALUDK2UF3/Nyaya_Mitra_TKKN0" class="btn" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none;">
+                        <i class="fas fa-robot"></i>
+                        Try Nyaya Mitra
                     </a>
                     <a href="#contact" class="btn btn-secondary">
                         <i class="fas fa-envelope"></i>
@@ -1380,18 +1421,58 @@
                         <i class="fas fa-download"></i>
                         Download Resume
                     </a>
-                    <a href="assets/documents/SachinCV.pdf" class="btn btn-secondary" download="Sachin_Yadav_CV.pdf">
-                        <i class="fas fa-file-download"></i>
-                        Download CV
-                    </a>
-                    <a href="https://www.linkedin.com/in/thesachinyyadav" class="btn btn-secondary" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                        LinkedIn
+                    <a href="assets/documents/Research_Paper_AI_Triage_System.pdf" class="btn btn-secondary" download="AI_Triage_System_Research.pdf">
+                        <i class="fas fa-file-alt"></i>
+                        Research Paper
                     </a>
                 </div>
             </div>            <div class="hero-visual fade-in">
                 <div class="hero-image">
                     <img src="assets/images/sachin-profile.jpg" alt="Sachin Yadav" onerror="this.style.display='none'; this.parentElement.classList.add('fallback'); this.parentElement.innerHTML='<i class=\'fas fa-user-graduate\'></i>';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Project: Nyaya Mitra -->
+    <section class="featured-project" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 4rem 0; margin-top: 2rem;">
+        <div class="section-container">
+            <div class="featured-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+                <div class="featured-text fade-in" style="color: white;">
+                    <div style="display: inline-block; background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; margin-bottom: 1rem; font-size: 0.9rem; font-weight: 500;">
+                        <i class="fas fa-star" style="color: #ffd700;"></i> Featured Project
+                    </div>
+                    <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; line-height: 1.2;">Nyaya Mitra</h2>
+                    <h3 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 1.5rem; opacity: 0.9;">AI-Powered Legal Assistant Chatbot</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; opacity: 0.95;">
+                        An innovative AI-powered legal assistance chatbot designed to provide accessible legal guidance and information. 
+                        Nyaya Mitra leverages natural language processing to help users understand legal concepts, procedures, and their rights.
+                        Built with cutting-edge AI technology to democratize access to legal information.
+                    </p>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="https://studio.pickaxe.co/STUDIO2OYY1JALUDK2UF3/Nyaya_Mitra_TKKN0" class="btn" target="_blank" rel="noopener noreferrer" style="background: white; color: #667eea; padding: 1rem 2rem; text-decoration: none; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                            <i class="fas fa-robot"></i>
+                            Try Nyaya Mitra Live
+                        </a>
+                        <a href="#research" class="btn" style="background: rgba(255,255,255,0.2); color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease; border: 2px solid white;">
+                            <i class="fas fa-file-alt"></i>
+                            Read Research Paper
+                        </a>
+                    </div>
+                </div>
+                <div class="featured-visual fade-in" style="position: relative;">
+                    <div style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border-radius: 20px; padding: 2rem; border: 2px solid rgba(255,255,255,0.2); box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+                        <div style="text-align: center; color: white;">
+                            <i class="fas fa-robot" style="font-size: 5rem; margin-bottom: 1rem; opacity: 0.9;"></i>
+                            <h4 style="font-size: 1.5rem; margin-bottom: 1rem;">Powered by Advanced AI</h4>
+                            <div style="display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center;">
+                                <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Natural Language Processing</span>
+                                <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Legal Knowledge Base</span>
+                                <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">24/7 Availability</span>
+                                <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">Multilingual Support</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1405,16 +1486,16 @@
                 <div class="stat-label">Years NCC Experience</div>
             </div>
             <div class="stat-item fade-in">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-number">1</div>
+                <div class="stat-label">Research Publication</div>
+            </div>
+            <div class="stat-item fade-in">
                 <div class="stat-number">5+</div>
                 <div class="stat-label">Certifications</div>
-            </div>
-            <div class="stat-item fade-in">
-                <div class="stat-number">2+</div>
-                <div class="stat-label">Years at Christ University</div>
-            </div>
-            <div class="stat-item fade-in">
-                <div class="stat-number">4</div>
-                <div class="stat-label">Languages Spoken</div>
             </div>
         </div>
     </section>
@@ -1672,6 +1753,94 @@
             </div>
         </div>    </section>
 
+    <!-- Research Section -->
+    <section id="research">
+        <div class="section-container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">Research & Publications</h2>
+                <p class="section-subtitle">Contributing to AI and Legal Technology Innovation</p>
+            </div>
+            <div class="research-showcase fade-in" style="max-width: 900px; margin: 0 auto;">
+                <div style="background: var(--bg-card); border: 2px solid var(--primary-color); border-radius: 20px; padding: 3rem; box-shadow: var(--shadow-xl); position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; right: 0; width: 200px; height: 200px; background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%); border-radius: 50%; transform: translate(50%, -50%);"></div>
+                    
+                    <div style="position: relative; z-index: 2;">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
+                            <div style="width: 80px; height: 80px; background: var(--blue-gradient); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div>
+                                <div style="display: inline-block; background: var(--blue-gradient); color: white; padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem;">
+                                    RESEARCH PAPER
+                                </div>
+                                <h3 style="font-size: 1.8rem; font-weight: 700; color: var(--text-primary); margin: 0;">
+                                    A Conceptual Framework for an AI-Powered Triage System in Indian Lower Courts
+                                </h3>
+                            </div>
+                        </div>
+                        
+                        <div style="margin-bottom: 2rem;">
+                            <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: 1.5rem;">
+                                This research paper presents a comprehensive framework for implementing an AI-powered triage system 
+                                designed to address the overwhelming case backlogs in Indian lower courts. The system leverages 
+                                machine learning and natural language processing to automate case categorization, prioritization, 
+                                and routing, potentially revolutionizing judicial efficiency in India.
+                            </p>
+                            
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                                <div style="background: var(--bg-secondary); padding: 1rem; border-radius: 12px; border-left: 4px solid var(--primary-color);">
+                                    <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; margin-bottom: 0.25rem;">Focus Area</div>
+                                    <div style="font-size: 1.1rem; color: var(--text-primary); font-weight: 600;">AI & Legal Technology</div>
+                                </div>
+                                <div style="background: var(--bg-secondary); padding: 1rem; border-radius: 12px; border-left: 4px solid var(--accent-color);">
+                                    <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; margin-bottom: 0.25rem;">Application</div>
+                                    <div style="font-size: 1.1rem; color: var(--text-primary); font-weight: 600;">Judicial System</div>
+                                </div>
+                                <div style="background: var(--bg-secondary); padding: 1rem; border-radius: 12px; border-left: 4px solid var(--success-color);">
+                                    <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600; margin-bottom: 0.25rem;">Impact</div>
+                                    <div style="font-size: 1.1rem; color: var(--text-primary); font-weight: 600;">High Potential</div>
+                                </div>
+                            </div>
+
+                            <h4 style="font-size: 1.2rem; font-weight: 600; color: var(--text-primary); margin-bottom: 1rem;">
+                                <i class="fas fa-lightbulb" style="color: var(--warning-color);"></i> Key Highlights
+                            </h4>
+                            <ul style="list-style: none; padding: 0; margin-bottom: 2rem;">
+                                <li style="padding: 0.5rem 0; padding-left: 2rem; position: relative; color: var(--text-secondary);">
+                                    <i class="fas fa-check-circle" style="position: absolute; left: 0; color: var(--success-color);"></i>
+                                    Automated case categorization using NLP and machine learning algorithms
+                                </li>
+                                <li style="padding: 0.5rem 0; padding-left: 2rem; position: relative; color: var(--text-secondary);">
+                                    <i class="fas fa-check-circle" style="position: absolute; left: 0; color: var(--success-color);"></i>
+                                    Intelligent prioritization system based on case urgency and legal parameters
+                                </li>
+                                <li style="padding: 0.5rem 0; padding-left: 2rem; position: relative; color: var(--text-secondary);">
+                                    <i class="fas fa-check-circle" style="position: absolute; left: 0; color: var(--success-color);"></i>
+                                    Integration framework for existing court management systems
+                                </li>
+                                <li style="padding: 0.5rem 0; padding-left: 2rem; position: relative; color: var(--text-secondary);">
+                                    <i class="fas fa-check-circle" style="position: absolute; left: 0; color: var(--success-color);"></i>
+                                    Scalable architecture designed for Indian judicial infrastructure
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <a href="assets/documents/Research_Paper_AI_Triage_System.pdf" class="btn btn-primary" download="AI_Powered_Triage_System_Research_Paper.pdf" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+                                <i class="fas fa-download"></i>
+                                Download Research Paper
+                            </a>
+                            <a href="https://studio.pickaxe.co/STUDIO2OYY1JALUDK2UF3/Nyaya_Mitra_TKKN0" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+                                <i class="fas fa-robot"></i>
+                                See Nyaya Mitra in Action
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects">
         <div class="section-container">
@@ -1701,22 +1870,35 @@
                     </div>
                 </div>
 
-                <div class="project-card fade-in">
-                    <div class="project-icon">
+                <div class="project-card fade-in" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); border: 2px solid #667eea; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 10px; right: 10px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; z-index: 10;">
+                        <i class="fas fa-star"></i> FEATURED
+                    </div>
+                    <div class="project-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
                         <i class="fas fa-robot"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Nyaya Mitra Chatbot</h3>
-                        <p class="project-description">AI-powered legal assistance chatbot built with Python to provide legal guidance and information to users.</p>
+                        <h3 class="project-title" style="font-size: 1.5rem;">Nyaya Mitra Chatbot</h3>
+                        <p class="project-description" style="font-size: 1.05rem;">
+                            AI-powered legal assistance chatbot that provides accessible legal guidance and information. 
+                            Built with advanced NLP to help users understand legal concepts, procedures, and their rights. 
+                            Featured in my research on AI applications in the Indian judicial system.
+                        </p>
                         <div class="project-tech">
+                            <span class="tech-tag" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none;">AI/ML</span>
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Legal Tech</span>
                             <span class="tech-tag">Chatbot</span>
                         </div>
                         <div class="project-actions">
-                            <a href="#" class="btn btn-primary btn-sm">
-                                <i class="fas fa-code"></i>
-                                Source Code
+                            <a href="https://studio.pickaxe.co/STUDIO2OYY1JALUDK2UF3/Nyaya_Mitra_TKKN0" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none;">
+                                <i class="fas fa-external-link-alt"></i>
+                                Try Live Demo
+                            </a>
+                            <a href="#research" class="btn btn-secondary btn-sm">
+                                <i class="fas fa-file-alt"></i>
+                                Research Paper
                             </a>
                         </div>
                     </div>
@@ -2052,6 +2234,10 @@
                         <a href="assets/documents/SachinCV.pdf" class="download-btn" download="Sachin_Yadav_CV.pdf">
                             <i class="fas fa-file-download"></i>
                             <span>Curriculum Vitae</span>
+                        </a>
+                        <a href="assets/documents/Research_Paper_AI_Triage_System.pdf" class="download-btn" download="AI_Triage_System_Research.pdf">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Research Paper</span>
                         </a>
                     </div>
                 </div>
