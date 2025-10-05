@@ -16,21 +16,32 @@
     
     <style>
         :root {
-            --primary-color: #2563eb;
-            --secondary-color: #64748b;
-            --accent-color: #06b6d4;
-            --success-color: #10b981;
-            --warning-color: #f59e0b;
-            --error-color: #ef4444;
-            --purple-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --blue-gradient: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
-            --text-primary: #0f172a;
+            /* Psychology-based sophisticated palette */
+            /* Primary: Deep Sapphire Blue - Trust, Intelligence, Depth */
+            --primary-color: #1e40af;
+            /* Secondary: Rich Amethyst Purple - Creativity, Innovation, Luxury */
+            --secondary-color: #7c3aed;
+            /* Accent: Vibrant Teal - Balance, Communication, Growth */
+            --accent-color: #0d9488;
+            /* Success: Fresh Emerald - Achievement, Progress, Vitality */
+            --success-color: #059669;
+            /* Warning: Warm Amber - Energy, Attention, Optimism */
+            --warning-color: #d97706;
+            /* Error: Confident Crimson - Urgency, Passion, Importance */
+            --error-color: #dc2626;
+            /* Gradients with psychological harmony */
+            --purple-gradient: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+            --blue-gradient: linear-gradient(135deg, #1e40af 0%, #0d9488 100%);
+            /* Text colors with warm undertones for approachability */
+            --text-primary: #1e293b;
             --text-secondary: #475569;
             --text-muted: #94a3b8;
+            /* Background with subtle warmth */
             --bg-primary: #ffffff;
             --bg-secondary: #f8fafc;
             --bg-card: #ffffff;
             --border-color: #e2e8f0;
+            /* Enhanced shadows for depth perception */
             --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
             --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
             --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
@@ -38,13 +49,16 @@
         }
 
         [data-theme="dark"] {
-            --text-primary: #f8fafc;
+            /* Dark theme with sophisticated depth and warmth */
+            --text-primary: #f1f5f9;
             --text-secondary: #cbd5e1;
             --text-muted: #64748b;
+            /* Deep navy with purple undertones for sophistication */
             --bg-primary: #0f172a;
             --bg-secondary: #1e293b;
             --bg-card: #1e293b;
             --border-color: #334155;
+            /* Enhanced shadows for dark theme depth */
             --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.3);
             --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.4);
             --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.4);
@@ -139,7 +153,7 @@
             font-size: 3rem;
             color: white;
             animation: pulse 2s infinite;
-            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+            box-shadow: 0 10px 30px rgba(30, 64, 175, 0.3);
             overflow: hidden;
         }
 
@@ -305,7 +319,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: radial-gradient(ellipse at center, rgba(37, 99, 235, 0.1) 0%, transparent 70%);
+            background: radial-gradient(ellipse at center, rgba(30, 64, 175, 0.1) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -394,12 +408,12 @@
         .btn-primary {
             background: var(--blue-gradient);
             color: white;
-            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+            box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3);
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+            box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
         }
 
         .btn-secondary {
@@ -431,7 +445,7 @@
             color: white;
             position: relative;
             overflow: hidden;
-            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
+            box-shadow: 0 20px 40px rgba(30, 64, 175, 0.3);
             animation: float 6s ease-in-out infinite;
             border: 4px solid var(--bg-primary);
         }
@@ -1001,7 +1015,7 @@
         .form-textarea:focus {
             outline: none;
             border-color: var(--primary-color);
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
         }
 
         .form-textarea {
@@ -1410,7 +1424,7 @@
                         <i class="fas fa-code"></i>
                         View My Projects
                     </a>
-                    <a href="https://studio.pickaxe.co/STUDIO2OYY1JALUDK2UF3/Nyaya_Mitra_TKKN0" class="btn" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none;">
+                    <a href="https://studio.pickaxe.co/STUDIO2OYY1JALUDK2UF3/Nyaya_Mitra_TKKN0" class="btn" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%); color: white; border: none;">
                         <i class="fas fa-robot"></i>
                         Try Nyaya Mitra
                     </a>
@@ -1435,7 +1449,7 @@
     </section>
 
     <!-- Featured Project: Nyaya Mitra -->
-    <section class="featured-project" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 4rem 0; margin-top: 2rem;">
+    <section class="featured-project" style="background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%); padding: 4rem 0; margin-top: 2rem;">
         <div class="section-container">
             <div class="featured-content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
                 <div class="featured-text fade-in" style="color: white;">
@@ -1450,7 +1464,7 @@
                         Built with cutting-edge AI technology to democratize access to legal information.
                     </p>
                     <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                        <a href="https://studio.pickaxe.co/STUDIO2OYY1JALUDK2UF3/Nyaya_Mitra_TKKN0" class="btn" target="_blank" rel="noopener noreferrer" style="background: white; color: #667eea; padding: 1rem 2rem; text-decoration: none; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                        <a href="https://studio.pickaxe.co/STUDIO2OYY1JALUDK2UF3/Nyaya_Mitra_TKKN0" class="btn" target="_blank" rel="noopener noreferrer" style="background: white; color: #8b5cf6; padding: 1rem 2rem; text-decoration: none; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 0.5rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
                             <i class="fas fa-robot"></i>
                             Try Nyaya Mitra Live
                         </a>
@@ -1762,11 +1776,11 @@
             </div>
             <div class="research-showcase fade-in" style="max-width: 900px; margin: 0 auto;">
                 <div style="background: var(--bg-card); border: 2px solid var(--primary-color); border-radius: 20px; padding: 3rem; box-shadow: var(--shadow-xl); position: relative; overflow: hidden;">
-                    <div style="position: absolute; top: 0; right: 0; width: 200px; height: 200px; background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(6, 182, 212, 0.1) 100%); border-radius: 50%; transform: translate(50%, -50%);"></div>
+                    <div style="position: absolute; top: 0; right: 0; width: 200px; height: 200px; background: linear-gradient(135deg, rgba(30, 64, 175, 0.1) 0%, rgba(13, 148, 136, 0.1) 100%); border-radius: 50%; transform: translate(50%, -50%);"></div>
                     
                     <div style="position: relative; z-index: 2;">
                         <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 2rem;">
-                            <div style="width: 80px; height: 80px; background: var(--blue-gradient); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);">
+                            <div style="width: 80px; height: 80px; background: var(--blue-gradient); border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: white; box-shadow: 0 8px 20px rgba(30, 64, 175, 0.3);">
                                 <i class="fas fa-file-alt"></i>
                             </div>
                             <div>
@@ -1870,11 +1884,11 @@
                     </div>
                 </div>
 
-                <div class="project-card fade-in" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); border: 2px solid #667eea; position: relative; overflow: hidden;">
-                    <div style="position: absolute; top: 10px; right: 10px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; z-index: 10;">
+                <div class="project-card fade-in" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%); border: 2px solid #8b5cf6; position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 10px; right: 10px; background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%); color: white; padding: 0.4rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; z-index: 10;">
                         <i class="fas fa-star"></i> FEATURED
                     </div>
-                    <div class="project-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <div class="project-icon" style="background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);">
                         <i class="fas fa-robot"></i>
                     </div>
                     <div class="project-content">
@@ -1885,14 +1899,14 @@
                             Featured in my research on AI applications in the Indian judicial system.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none;">AI/ML</span>
+                            <span class="tech-tag" style="background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%); color: white; border: none;">AI/ML</span>
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">NLP</span>
                             <span class="tech-tag">Legal Tech</span>
                             <span class="tech-tag">Chatbot</span>
                         </div>
                         <div class="project-actions">
-                            <a href="https://studio.pickaxe.co/STUDIO2OYY1JALUDK2UF3/Nyaya_Mitra_TKKN0" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none;">
+                            <a href="https://studio.pickaxe.co/STUDIO2OYY1JALUDK2UF3/Nyaya_Mitra_TKKN0" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%); border: none;">
                                 <i class="fas fa-external-link-alt"></i>
                                 Try Live Demo
                             </a>
