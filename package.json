@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A stunning, modern portfolio website with dark/light themes and advanced animations",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Ready for deployment to static hosting'"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "responsive",
+    "modern",
+    "animations",
+    "dark-theme",
+    "light-theme"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.0.0"
+  },
+  "homepage": "https://your-portfolio-domain.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/portfolio-website.git"
+  }
+}
