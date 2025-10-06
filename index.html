@@ -3,58 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <title>Sachin Yadav | BCA Student & AIML Enthusiast</title>
     <meta name="description" content="Aspiring Computer Applications professional and AIML enthusiast. Full-stack developer with expertise in web and mobile development.">
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <link rel="stylesheet" href="apple-theme.css">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="dist/output.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">Sachin Yadav</div>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link active">Home</a></li>
+    <nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="text-lg font-semibold tracking-tight">Sachin Yadav</div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="nav-controls">
-                <button class="theme-toggle" id="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
+            <button class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-dark-800 transition-colors duration-200" id="theme-toggle">
+                <i class="fas fa-moon text-lg"></i>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content fade-in">
-                <h1>Hi, I'm Sachin Yadav</h1>
-                <p class="subtitle">BCA Student & AIML Enthusiast</p>
-                <p class="location">
-                    <i class="fas fa-map-marker-alt"></i>
+    <section id="home" class="min-h-screen flex items-center pt-16 bg-gradient-to-b from-gray-50 to-white dark:from-dark-900 dark:to-dark-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8" data-animate>
+                <div class="space-y-2">
+                    <span class="text-primary-600 dark:text-primary-400 text-sm font-medium tracking-widest uppercase">Innovating with AI & Technology</span>
+                    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent">Hi, I'm Sachin Yadav</h1>
+                    <p class="text-xl sm:text-2xl text-dark-500 dark:text-dark-400">BCA Student & AIML Enthusiast</p>
+                </div>
+                <p class="flex items-center text-dark-500 dark:text-dark-400 text-lg">
+                    <i class="fas fa-map-marker-alt mr-2 text-primary-600 dark:text-primary-400"></i>
                     Bangalore Urban, Karnataka, India
                 </p>
-                <p class="description">
-                    Aspiring Computer Applications professional and second-year BCA student at Christ University, Bangalore. 
-                    Experienced in full stack web development, mobile app development, and Python. 
-                    Passionate about <strong>AI/ML and Legal Technology innovation</strong>, with published research on AI-powered judicial systems. 
-                    Creator of <strong>Nyaya Mitra</strong>, an AI legal assistance chatbot. Strong background in leadership and community service.
+                <p class="text-lg text-dark-600 dark:text-dark-300 leading-relaxed">
+                    An aspiring technologist pioneering the intersection of AI and legal innovation. Currently pursuing BCA at Christ University, 
+                    with expertise in full-stack development and a passion for creating impactful solutions like <strong class="text-dark-900 dark:text-white">Nyaya Mitra</strong>.
                 </p>                <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">
                         <i class="fas fa-code"></i>
@@ -749,5 +755,6 @@
             });
         });
     </script>
+    <script src="app.js"></script>
 </body>
 </html>

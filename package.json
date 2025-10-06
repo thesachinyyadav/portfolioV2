@@ -4,9 +4,9 @@
   "description": "A stunning, modern portfolio website with dark/light themes and advanced animations",
   "main": "index.html",
   "scripts": {
-    "start": "serve .",
-    "build": "echo 'No build process needed for static site'",
-    "deploy": "echo 'Ready for deployment to static hosting'"
+    "dev": "npx tailwindcss -i ./styles.css -o ./dist/output.css --watch",
+    "build": "npx tailwindcss -i ./styles.css -o ./dist/output.css --minify",
+    "serve": "serve ."
   },
   "keywords": [
     "portfolio",
@@ -25,6 +25,16 @@
   "homepage": "https://your-portfolio-domain.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/portfolio-website.git"
+    "url": "git+https://github.com/yourusername/portfolio-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/portfolio-website/issues"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "autoprefixer": "^10.4.21",
+    "framer-motion": "^12.23.22",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14"
   }
 }
